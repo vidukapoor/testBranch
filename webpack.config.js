@@ -14,7 +14,9 @@ module.exports = {
     path: path.resolve('./dist'),
     libraryTarget: 'umd'
   },
-
+  devServer: {
+    port: 9300
+  },
   module: {
     loaders: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
